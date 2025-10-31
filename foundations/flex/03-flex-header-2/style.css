@@ -1,6 +1,6 @@
 /* this is some magical font-importing.  
 you'll learn about it later. */
-@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap");
 
 body {
   margin: 0;
@@ -9,20 +9,24 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
   background: white;
   border-bottom: 1px solid #ddd;
-  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image {
+  margin: 8px;
   background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
 }
 
 .logo {
+  margin: 8px;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -30,6 +34,7 @@ body {
 }
 
 button {
+  margin: 8px;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
@@ -38,11 +43,26 @@ button {
 }
 
 a {
+  margin: 8px;
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
 }
 
 ul {
+  display: flex;
+  padding: 0;
   list-style-type: none;
+}
+
+.left {
+  align-items: center;
+  display: flex;
+  margin-right: auto;
+}
+
+.right {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
 }
